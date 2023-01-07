@@ -11,7 +11,7 @@ toggleMenu();
 
 function sendEmail() {
     Email.send({
-        SecureToken: "402e1a3d-ca29-4c91-9290-da7de9d73619",
+        SecureToken: "78954b5c-0437-4778-b38c-4fc0022061d2",
         // Host : "smtp.elasticemail.com",
         // Username : "rachasima.tran001@gmail.com",
         // Password : "E8B047412BE2D7B2292BD89D92622673EC07",
