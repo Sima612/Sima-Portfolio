@@ -348,7 +348,7 @@ p {
     height: 100px;
 }
 
-.contact .contactForm .row input[type="submit"] {
+.contact .contactForm .row button {
     background: #00bcd4;
     color: #fff;
     padding: 10px 30px;
