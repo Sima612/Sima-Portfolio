@@ -11,10 +11,10 @@ toggleMenu();
 
 function sendEmail() {
     Email.send({
-        // SecureToken: "ba12a756-ff36-42c6-8f65-b95855e624ec",
-        Host : "smtp.elasticemail.com",
-        Username : "rachasima.tran001@gmail.com",
-        Password : "718BE7D4004469E6598683EA0DB453BCC277",
+        SecureToken: "abf8270d-8805-4d8e-af5d-c71b04456aa8",
+        // Host : "smtp.elasticemail.com",
+        // Username : "sima101531@yahoo.com",
+        // Password : "F54EC4DE3C1C27C1959ACBF258C1C7565AE3",
         To : "rachasima.tran001@gmail.com",
         From : document.getElementById("email").value,
         Subject : document.getElementById("subject").value,
@@ -23,7 +23,7 @@ function sendEmail() {
             + "<br> Phone #: " + document.getElementById("number").value
             + "<br> Message: " + document.getElementById("message").value
     }).then(
-      message => alert("Message sent successfully")
+      message => alert(message)
     );
 
     return;
