@@ -8,6 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css">
         <script src="https://kit.fontawesome.com/a079469067.js" crossorigin="anonymous"></script>
+        <script src="/index.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
     </head>
     <body>
         <div class="toggle" onclick="toggleMenu();"></div>
@@ -25,7 +27,7 @@
                     <h4><span>Hello</span> I'm</h4>
                     <h2>Sima Tran,</h2>
                     <h4>I'm a Full Stack Developer</h4>
-                    <p>I recently just completed a course from a 10 months immersive software development bootcamp program at University of CalState Long Beach as a Full Stack Developer hoping to work both in front and backend.</p>
+                    <p>I recently just completed a course from a 10-month immersive software development bootcamp program at University of CalState Long Beach as a Full Stack Developer hoping to work both in front and backend.</p>
                     <a href="#about" class="btn">About Me</a>
                 </div>
                 <ul class="sci">
@@ -101,35 +103,42 @@
         <section class="contact" id="contact">
             <div class="title white">
                 <h2>Contact Me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <p>Please reach out to me below if you have any questions as I am currently looking for employment!</p>
             </div>
             <div class="contactForm">
-                <div class="row">
-                    <div class="col50">
-                        <input type="text" name="" placeholder="First Name">
+                <form onsubmit="sendEmail(); reset(); return false">
+                    <div class="row">
+                        <div class="col50">
+                            <input type="text" id="fName" placeholder="First Name" required>
+                        </div>
+                        <div class="col50">
+                            <input type="text" id="lName" placeholder="Last Name" required>
+                        </div>
                     </div>
-                    <div class="col50">
-                        <input type="text" name="" placeholder="Last Name">
+                    <div class="row">
+                        <div class="col50">
+                            <input type="email" id="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="col50">
+                            <input type="text" id="number" placeholder="Mobile No." required>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col50">
-                        <input type="text" name="" placeholder="Email">
+                    <div class="row">
+                        <div class="col100">
+                            <input type="text" id="subject" placeholder="Subject">
+                        </div>
                     </div>
-                    <div class="col50">
-                        <input type="text" name="" placeholder="Mobile No.">
+                    <div class="row">
+                        <div class="col100">
+                            <textarea id="message" placeholder="Message"></textarea>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col100">
-                        <textarea placeholder="Message"></textarea>
+                    <div class="row">
+                        <div class="col100">
+                            <input type="submit" value="Send">
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col100">
-                        <input type="submit" value="Send">
-                    </div>
-                </div>
+                </form>
             </div>
         </section>
 
@@ -142,13 +151,13 @@
             </ul>
         </div>
         
-        <script>
+        <!-- <script>
             function toggleMenu() {
                 const menuToggle = document.querySelector('.toggle');
                 const sidebar = document.querySelector('.sidebar');
                 menuToggle.classList.toggle('active');
                 sidebar.classList.toggle('active');
             }
-        </script>
+        </script> -->
     </body>
 </html>
