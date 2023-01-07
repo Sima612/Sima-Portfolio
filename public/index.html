@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sima Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/style/main.css">
+        <script src="https://kit.fontawesome.com/a079469067.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        
+        <section class="banner" id="home">
+
+            <div class="imgSidebar">
+                <img src="img/sima1.JPG" alt="">
+            </div>
+            <div class="contentBx">
+                <h5 class="logoText">
+                    My Portfolio
+                </h5>
+                <div>
+                    <h4><span>Hello</span> I'm</h4>
+                    <h2>Sima Tran,</h2>
+                    <h4>I'm a Full Stack Developer</h4>
+                    <p>I recently just completed a course from a 10 months immersive software development bootcamp program at University of CalState Long Beach as a Full Stack Developer hoping to work both in front and backend.</p>
+                    <a href="#about" class="btn">About Me</a>
+                </div>
+                <ul class="sci">
+                    <li>
+                        <a href="https://www.linkedin.com/in/sima-tran/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Sima612" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="title white">
+                <h2>About Me</h2>
+            </div>
+            <div class="content">
+                <div class="textBx">
+                    <p>
+                        During my time studying at Cal State Long Beach, we were taught on both front-end and back-end using all different types of languages, frameworks, and packages such as HTML5, CSS/SASS, JAVASCRIPT, BOOTSTRAP, REACT/REDUX, NodeJS, EXPRESS, PYTHON, FLASK, MONGOOSE/MongoDB, MySQL, etc...<br> <br>
+                        
+                        Although my experience and knowledge may be at a novice level, I have a strong desire to learn as much as I can all the while practicing daily on becoming a better programmer. I’m a quick learner as I learn and work best through hands-on experience and as well as being an exceptional team player. I always work as best as I can not only for myself but to grow with the company.
+                    </p>
+                </div>
+                <div class="imgBx">
+                    <img src="img/sima2.jpeg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="work" id="work">
+            <div class="title">
+                <h2>Projects</h2>
+                <p>Here are my recent work during my studies.</p>
+            </div>
+            <div class="content">
+                <div class="workBx">
+                    <div class="imgBx">
+                        <img src="img/kasper.jpg">
+                    </div>
+                    <div class="textBx">
+                        <a href="https://sima612.github.io/survey-form/" target="_blank"><h3>Survey Form</h3></a>
+                    </div>
+                </div>
+                <div class="workBx">
+                    <div class="imgBx">
+                        <img src="img/muhammad.jpg">
+                    </div>
+                    <div class="textBx">
+                        <a href="https://sima612.github.io/Build-Tribute-Page/" target="_blank"><h3>Tribute Page</h3></a>
+                    </div>
+                </div>
+                <div class="workBx">
+                    <div class="imgBx">
+                        <img src="img/connect-4.jpg">
+                    </div>
+                    <div class="textBx">
+                        <a href="https://sima612.github.io/Web-Game/" target="_blank"><h3>Connect 4</h3></a>
+                    </div>
+                </div>
+                <div class="workBx">
+                    <div class="imgBx">
+                        <img src="img/chase-logo.jpg">
+                    </div>
+                    <div class="textBx">
+                        <a href="https://sima612.github.io/copy-cat-project/" target="_blank"><h3>Copy-Cat Assignment</h3></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="title white">
+                <h2>Contact Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <div class="contactForm">
+                <div class="row">
+                    <div class="col50">
+                        <input type="text" name="" placeholder="First Name">
+                    </div>
+                    <div class="col50">
+                        <input type="text" name="" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col50">
+                        <input type="text" name="" placeholder="Email">
+                    </div>
+                    <div class="col50">
+                        <input type="text" name="" placeholder="Mobile No.">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col100">
+                        <textarea placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col100">
+                        <input type="submit" value="Send">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="sidebar">
+            <ul class="menu">
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#work" onclick="toggleMenu()">Work</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+        
+        <script>
+            function toggleMenu() {
+                const menuToggle = document.querySelector('.toggle');
+                const sidebar = document.querySelector('.sidebar');
+                menuToggle.classList.toggle('active');
+                sidebar.classList.toggle('active');
+            }
+        </script>
+    </body>
+</html>
