@@ -7,6 +7,7 @@ function toggleMenu() {
     
     return;
 }
+toggleMenu();
 
 function sendEmail() {
     Email.send({
@@ -23,3 +24,4 @@ function sendEmail() {
 
     return;
 }
+sendEmail();
