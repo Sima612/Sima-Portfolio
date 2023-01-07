@@ -11,13 +11,17 @@ toggleMenu();
 
 function sendEmail() {
     Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "rachasima.tran001@gmail.com",
-        Password : "EBE9AD4EF5C0380D32077E33CEE3A53A000D",
+        SecureToken: "402e1a3d-ca29-4c91-9290-da7de9d73619",
+        // Host : "smtp.elasticemail.com",
+        // Username : "rachasima.tran001@gmail.com",
+        // Password : "E8B047412BE2D7B2292BD89D92622673EC07",
         To : 'rachasima.tran001@gmail.com',
         From : document.getElementById("email").value,
         Subject : document.getElementById("subject").value,
-        Body : "And this is the body"
+        Body : "Full Name: " + document.getElementById("name").value
+            + "<br> Email Address: " + document.getElementById("email").value
+            + "<br> Phone #: " + document.getElementById("number").value
+            + "<br> Message: " + document.getElementById("message").value
     }).then(
       message => alert(message)
     );
