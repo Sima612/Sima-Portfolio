@@ -4,6 +4,8 @@ function toggleMenu() {
     const sidebar = document.querySelector('.sidebar');
     menuToggle.classList.toggle('active');
     sidebar.classList.toggle('active');
+    
+    return;
 }
 
 function sendEmail() {
@@ -18,4 +20,6 @@ function sendEmail() {
     }).then(
       message => alert(message)
     );
+
+    return;
 }
