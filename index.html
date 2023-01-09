@@ -114,7 +114,7 @@
                 <p>Please reach out to me below if you have any questions as I am currently looking for employment!</p>
             </div>
             <div class="contactForm">
-                <form method="post" action="contact-form-handler.php">
+                <form onsubmit="sendEmail(); reset(); return false;">
                     <div class="row">
                         <div class="col50">
                             <input type="text" id="name" placeholder="Full Name" required>
